@@ -1,4 +1,5 @@
 const output = document.getElementById("output");
+const btn = document.getElementById("download-images-button");
 const loadingDiv = document.createElement('div');
 loadingDiv.id = 'loading';
 loadingDiv.textContent = 'Loading...';
@@ -47,4 +48,4 @@ function downloadImages() {
     });
 }
 
-downloadImages();
+btn.addEventListener('click', downloadImages);
